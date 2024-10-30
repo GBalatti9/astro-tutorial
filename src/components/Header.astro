@@ -1,0 +1,20 @@
+---
+import Hamburger from "./Hamburger.astro";
+import Navbar from "./Navbar.astro";
+---
+
+<header class="header-container">
+    <div>Logo</div>
+    <Hamburger />
+    <Navbar />
+</header>
+
+<style>
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+</style>

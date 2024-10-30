@@ -1,0 +1,14 @@
+---
+const NAVBARITEMS = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/blog", label: "Blog" },
+    { href: "/tags", label: "Tags" },
+] as const;
+---
+
+<nav>
+    <ul>
+        {NAVBARITEMS.map(({ href, label }) => <a href={href}>{label}</a>)}
+    </ul>
+</nav>
